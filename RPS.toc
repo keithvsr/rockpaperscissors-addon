@@ -1,0 +1,14 @@
+## Interface: 20505
+## Title: Rock Paper Scissors
+## Notes: Challenge guildmates to RPS. Records tracked per character.
+## Version: 0.1.0
+## Author: Kaaser-Nightslayer <Tusk Up>
+
+## SavedVariablesPerCharacter: RPSCharDB
+
+Core.lua
+DB/RPSDB.lua
+Game/RPSGame.lua
+Net/RPSNet.lua
+UI/RPSFrame.lua
+RPS.lua
