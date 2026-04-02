@@ -1,0 +1,9 @@
+# .pkgmeta
+package-as: RockPaperScissors
+
+ignore:
+    - .git
+    - .github
+    - .pkgmeta
+    - README.md
+    - "*.md"
