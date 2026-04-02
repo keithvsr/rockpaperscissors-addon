@@ -1,0 +1,19 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*' # triggers on any version tag i.e. v1.0.0, v0.2.1, etc.
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Package and publish to CurseForge
+        uses: BigWigsMods/packager@v2
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          PROJECT_ID: ${{ secrets.CF_PROJECT_ID }}
+          GAME_VERSION: "2.5.5"
