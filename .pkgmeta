@@ -1,5 +1,5 @@
 # .pkgmeta
-package-as: RockPaperScissors
+package-as: RPS
 
 ignore:
     - .git
